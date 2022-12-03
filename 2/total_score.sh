@@ -15,6 +15,9 @@
 #		print(t,NR)
 #	}'
 #
+# p := pattern ; T := strategy ; w := weight of pattern ; G(T) := score of strategy
+# S(p) = G(T) + w(T(p)) == G(T) + (wT)(p)
+#
 awk 'BEGIN{
 		ts=0;
 		S["X","A"]=3; S["X","B"]=1; S["X","C"]=2;
